@@ -3,6 +3,7 @@
 * Version: 1.4
 * Language: Javascript
 * Framework: jQuery
+* JSPerf: http://jsperf.com/testingtextshaodwieyouknow/9
 
 
 ## Description:
