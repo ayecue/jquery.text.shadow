@@ -10,7 +10,7 @@
 	$.extend($,{
 		textShadowParseEx:function(value){
 			var position=value.match(/(^|\s)-?(\d+)(?=[a-z%]+|\s|$)/gi),
-				color=value.match(/#[\da-f]{3,6}|(?:rgb|hsb)a?\(.*?\)|[a-z]+/i),
+				color=value.match(/#[\da-f]{3,6}|(?:rgb|hsb)a?\(.*?\)|\b[a-z]+\b/i),
 				shadow={x:0,y:0,radius:0,color:color[0] || 'transparent'},
 				posLength=position.length || 0,
 				colorLength=color.length || 0;
