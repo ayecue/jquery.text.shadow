@@ -9,7 +9,7 @@
 	var methods=[function(rx){return {x:0,y:0};},function(rx){return {x:rx[0],y:rx[0]};},function(rx){return {x:rx[0],y:rx[1]};},function(rx){return {x:rx[0],y:rx[1],radius:rx[2]};}];
 	$.extend($,{
 		textShadowParseEx:function(value){
-			var position=value.match(/-?(\d+)(?=[a-z%]+)/gi),
+			var position=value.match(/-?(\d+)(?=[a-z%]*)/gi),
 				color=value.match(/#[0-9a-f]+|(?:rgb|hsb)a?\([^\)]*\)|\b[a-z]+\b/i),
 				shadow={x:0,y:0,radius:0,color:color[0] || 'transparent'},
 				posLength=position.length || 0,
