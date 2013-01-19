@@ -11,13 +11,16 @@ A simple text-shadow plugin for the IE. This plugin will be faster than the norm
 
 ### Examples:
 
-	//Add a text-shadow with the properties in the CSS file
+	//Add text-shadow with the properties in the CSS file
 	$('#my_element').textShadow();
 	
-	//Add a text-shadow with own properties
+	//Add text-shadow with own properties
 	$('#my_element').textShadow({x:0,y:1,color:'#FFF'});
 	
-	//Add a text-shadow with own properties and the properties in the CSS file
+	//Add multiple text-shadows with own properties
+	$('#my_element').textShadow([{x:0,y:1,color:'#FFF'},{x:1,y:0,color:'red'}]);
+	
+	//Add text-shadow with own properties and the properties in the CSS file
 	$('#my_element').textShadow({color:'#FFF'},true);
 	
 	
