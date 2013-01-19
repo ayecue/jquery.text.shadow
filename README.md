@@ -3,7 +3,7 @@
 * Version: 1.4
 * Language: Javascript
 * Framework: jQuery
-* JSPerf: http://jsperf.com/testingtextshaodwieyouknow/10
+* JSPerf: http://jsperf.com/testingtextshaodwieyouknow/11
 
 
 ## Description:
