@@ -1,6 +1,6 @@
 /*
  * Plugin: jquery.text.shadow
- * Version: 1.4a
+ * Version: 1.4b
  *
  * Description:
  * - Improved text-shadow plugin for jQuery.
@@ -9,8 +9,8 @@
 	var methods=[function(rx){return {x:0,y:0};},function(rx){return {x:rx[0],y:rx[0]};},function(rx){return {x:rx[0],y:rx[1]};},function(rx){return {x:rx[0],y:rx[1],radius:rx[2]};}];
 	$.extend($,{
 		textShadowParseEx:function(value){
-			var position=value.match(/(^|\s)-?(\d+)(?=[a-z%]*)/gi),
-				color=value.match(/#[0-9a-f]+|(?:rgb|hsb)a?\([^\)]*\)|\b[a-z]+\b/i),
+			var position=value.match(/(^|\s)-?(\d+)(?=[a-z%]+|\s|$)/gi),
+				color=value.match(/#[0-9a-f]+|[a-z]{3,4}\([^\)]*\)|[a-z]+/i),
 				shadow={x:0,y:0,radius:0,color:color[0] || 'transparent'},
 				posLength=position.length || 0,
 				colorLength=color.length || 0;
