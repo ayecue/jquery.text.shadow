@@ -1,6 +1,6 @@
 # cssReader (jQuery Plugin)
 * Author: ayecue
-* Version: 1.4
+* Version: 1.4a
 * Language: Javascript
 * Framework: jQuery
 * JSPerf: http://jsperf.com/testingtextshaodwieyouknow/11
