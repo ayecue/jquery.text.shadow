@@ -1,4 +1,4 @@
-# cssReader (jQuery Plugin)
+# text.shadow (jQuery Plugin)
 * Author: ayecue
 * Version: 1.5
 * Language: Javascript
