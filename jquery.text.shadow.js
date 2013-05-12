@@ -193,6 +193,8 @@ $.browser.msie
 			
 				if (argsLength in textShadow.addMethods)
 					textShadow.addMethods[argsLength](this,options);
+					
+				return this;
 			},
 			textShadowRemove:function(textShadowIndex){
 				for (var index=0,indexLength=this.length;index<indexLength;index++)
@@ -207,12 +209,14 @@ $.browser.msie
 								textShadow.remove(el,index);
 					}
 				}
+				
+				return this;
 			}
 		});
 	})(jQuery)
 	: (function($){
 		$.extend($.fn,{
-			textShadow:function(){return true},
-			textShadowRemove:function(){return true}
+			textShadow:function(){return this},
+			textShadowRemove:function(){return this}
 		});
 	})(jQuery);
